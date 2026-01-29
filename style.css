@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.left {
+    width: 30%;
+    background: #2b0a3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 70%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section {
+    position: relative;
+    width: 400px;
+}
+
+.card {
+    width: 500px;
+    height: 290px;
+    border-radius: 12px;
+    padding: 15px;
+    color: #fff;
+}
+
+
+.card.front {
+    background: url("bg/bg-card-front.png") no-repeat center/cover;
+    position: relative;
+    bottom: 155px;
+    left: 180px;
+    z-index: 2;
+}
+
+.card.back {
+    background: url("bg/bg-card-back.png") no-repeat center/cover;
+    position: absolute;
+    top: 160px;
+    left: 260px;
+}
+
+.logo-1 {
+    margin-left: 20px;
+}
+.logo {
+    width: 110px;
+}
+
+.card-number {
+    font-size: 31px;
+    margin: 70px 10px 50px;
+    letter-spacing: 3px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card-name h4 {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.card-exp h4 {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.cvc {
+    position: absolute;
+    top: 130px;
+    right: 60px;
+    font-size: 18px;
+}
+
+.form-section {
+    width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 23px 20px;
+    border-radius: 15px;
+    border: 1px solid #3a3636;
+}
+
+
+:placeholder-shown{
+    font-size: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+:placeholder-shown:hover{
+    background-color: rgb(242, 239, 239);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.date-inputs .exp {
+    margin-top: 5px;
+    width: 90px;
+    height: 68px;
+}
+
+
+.error {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.submit-btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #2b0a3d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    font-size: 22px;
+    background-color: rgb(209, 13, 46);
+    color: black;
+}
+
