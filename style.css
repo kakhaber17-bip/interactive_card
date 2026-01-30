@@ -1,270 +1,367 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .left {
-    width: 30%;
-    background: #2b0a3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 30%;
+  background-image: url(bg/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right {
-    width: 70%;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 70%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-section {
-    position: relative;
-    width: 400px;
+  position: relative;
+  width: 400px;
 }
 
 .card {
-    width: 500px;
-    height: 290px;
-    border-radius: 12px;
-    padding: 15px;
-    color: #fff;
+  width: 28vw;
+  height: 16vw;
+  border-radius: 12px;
+  padding: 15px;
+  color: #fff;
+}
+
+.card.front {
+  background: url("bg/bg-card-front.png") no-repeat center/cover;
+  position: relative;
+  bottom: 10vw;
+  left: 5vw;
+  z-index: 2;
+}
+
+.card.back {
+  background: url("bg/bg-card-back.png") no-repeat center/cover;
+  position: absolute;
+  top: 9vw;
+  left: 10vw;
+}
+
+.logo-1 {
+  margin-top: 10px;
+  margin-left: 1vw;
+}
+.logo {
+  width: 22%;
+}
+
+.card-number {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 21px;
+  margin: 70px 5px 30px;
+  letter-spacing: 5px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: -10px 20px;
+  font-size: 14px;
+}
+
+.card-name h4 {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  margin-left: 1vw;
+}
+
+.card-number {
+  font-size: 30px;
+  margin-left: 1vw;
+  margin-top: 5.5vw;
+  margin-bottom: 2vw;
+}
+
+.card-exp h4 {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+.cvc {
+  position: absolute;
+  top: 140px;
+  right: 60px;
+  font-size: 18px;
+}
+
+.form-section {
+  width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 23px 20px;
+  border-radius: 15px;
+  border: 1px solid #3a3636;
+}
+
+:placeholder-shown {
+  font-size: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+:placeholder-shown:hover {
+  background-color: rgb(242, 239, 239);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.date-inputs .exp {
+  margin-top: 5px;
+  width: 90px;
+  height: 68px;
+}
+
+.error {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: red;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.submit-btn {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2b0a3d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  font-size: 22px;
+  background-color: rgb(209, 13, 46);
+  color: black;
+}
+
+
+
+
+
+
+@media (max-width: 1610px) {
+
+.container {
+  min-height: 100vh;
+  width: 115%;
+}
+
+
+.card {
+  width: 28vw;
+  height: 17vw;
+  border-radius: 12px;
+  padding: 15px;
+  color: #fff;
 }
 
 
 .card.front {
-    background: url("bg/bg-card-front.png") no-repeat center/cover;
-    position: relative;
-    bottom: 155px;
-    left: 180px;
-    z-index: 2;
+  bottom: 10vw;
+  left: 12vw;
+  z-index: 2;
 }
 
 .card.back {
-    background: url("bg/bg-card-back.png") no-repeat center/cover;
-    position: absolute;
-    top: 160px;
-    left: 260px;
+  top: 9vw;
+  left: 18vw;
 }
 
 .logo-1 {
-    margin-left: 20px;
+  margin-top: 1vw;
+  margin-left: 1vw;
 }
 .logo {
-    width: 110px;
+  width: 20%;
 }
 
 .card-number {
-    font-size: 31px;
-    margin: 70px 10px 50px;
-    letter-spacing: 3px;
+  margin: 10px;
+  letter-spacing: 5px;
+}
+
+h2.card-number {
+    font-size: 1.5vw;
 }
 
 .card-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-size: 14px;
+  padding: 1px;
 }
 
 .card-name h4 {
-    font-size: 14px;
-    letter-spacing: 1.4px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  margin-left: 1vw;
 }
+
+.card-number {
+  font-size: 1vw;
+  margin-left: 1vw;
+  margin-top: 5.5vw;
+  margin-bottom: 2vw;
+}
+
 
 .card-exp h4 {
-    font-size: 15px;
-    letter-spacing: 1.5px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
 }
+
 
 .cvc {
+  top: 140px;
+  right: 60px;
+  font-size: 18px;
+}
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: 260px;
+    position: relative;
+  }
+
+  .card-section {
+    position: relative;
+    width: 350vw;
+    height: 100%;
+  }
+
+  .card {
+    width: 330px;
+    height: 190px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .card.front,
+  .card.back {
+    bottom: auto;
+    right: auto;
+  }
+
+  .card.back {
     position: absolute;
-    top: 130px;
-    right: 60px;
-    font-size: 18px;
-}
+    top: 20px;
+    left: 53%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
 
-.form-section {
-    width: 500px;
-}
+  .card.front {
+    position: absolute;
+    top: 140px;
+    left: 43%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 25vw;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+  .card.front h2 {
+    font-size: 24px;
     letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 8px;
+  }
+
+  .card-footer {
+    display: none;
+  }
+
+  .right {
+    width: 100%;
+    padding-top: 90px;
+  }
+
+  form {
+    width: 80%;
+    margin: 40px 40px;
+  }
+
+  .form-row {
+    gap: 15px;
+  }
+
+  .date-inputs .exp {
+    width: 60px;
+    height: 20px;
+  }
+
+  .submit-btn {
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding: 15px;
+  }
 }
-
-input {
-    padding: 23px 20px;
-    border-radius: 15px;
-    border: 1px solid #3a3636;
-}
-
-
-:placeholder-shown{
-    font-size: 20px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-:placeholder-shown:hover{
-    background-color: rgb(242, 239, 239);
-}
-
-.form-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.date-inputs {
-    display: flex;
-    gap: 10px;
-}
-
-.date-inputs .exp {
-    margin-top: 5px;
-    width: 90px;
-    height: 68px;
-}
-
-
-.error {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: red;
-    font-size: 16px;
-    margin-top: 8px;
-}
-
-.submit-btn {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 16px;
-    border: none;
-    border-radius: 10px;
-    background: #2b0a3d;
-    color: #fff;
-    cursor: pointer;
-}
-
-.submit-btn:hover{
-    font-size: 22px;
-    background-color: rgb(209, 13, 46);
-    color: black;
-}
-
-
-
-@media (max-width: 900px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .left {
-        width: 100%;
-        height: 260px;
-        position: relative;
-    }
-
-    .card-section {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    .card {
-        width: 330px;
-        height: 190px;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-
-    .card.front,
-    .card.back {
-        bottom: auto;
-        right: auto;
-    }
-
-    .card.back {
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
-
-    .card.front {
-        position: absolute;
-        top: 120px;
-        left: 40%;
-        transform: translateX(-50%);
-        z-index: 2;
-    }
-
-    .card.front h2 {
-        font-size: 20px;
-        letter-spacing: 4px;
-    }
-
-
-
-    .right {
-        width: 100%;
-        padding-top: 90px;
-    }
-
-    form {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .form-row {
-        gap: 15px;
-    }
-
-    .date-inputs .exp {
-        width: 60px;
-        height: 60px;
-    }
-
-    .submit-btn {
-       margin-bottom: 40px;
-    }
-}
-
