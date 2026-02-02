@@ -266,13 +266,10 @@ h2.card-number {
 
 
 .cvc {
-  top: 140px;
-  right: 60px;
-  font-size: 18px;
+  display: none;
 }
 
 }
-
 
 
 
